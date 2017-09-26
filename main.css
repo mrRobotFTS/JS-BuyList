@@ -47,6 +47,16 @@ body{
 }
 
 
+@media(max-width: 500px)  {
+    .bl-row{
+        width: 100%;
+    }
+
+    .bl-bought{
+        width: 100%;
+    }
+}
+
 /*Кнопки*/
 .bl-label {
     background: #cdcbcb;
@@ -247,7 +257,7 @@ body{
 .notBoughtProducts{
     border-top:1px solid rgba(34,36,38,.15);
     border-bottom:1px solid rgba(34,36,38,.15);
-    display: flex;
+    display: block;
 }
 
 .productWasBought{
@@ -257,10 +267,11 @@ body{
 
 .notBoughtProduct{
     background-color: lightgray;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:5px;
+    /*margin-bottom:10px;*/
     margin-top:10px;
     margin-right:4px;
+    margin-left:4px;
     border-radius: 0.3em;
     vertical-align: center;
     display: inline-block;
@@ -276,6 +287,11 @@ body{
 .notBoughtProduct:first-child{
     margin-left: 10px;
 }
+
+.notBoughtProduct:last-child{
+    margin-bottom: 10px;
+}
+
 
 
 .amountOfProductsLebel{
@@ -300,3 +316,57 @@ body{
 .lastPanel{
     border-top:1px solid rgba(34,36,38,.15);
 }
+
+.beyedj{
+    position: fixed;
+    bottom: -100px;
+    left: 100px;
+    width: 150px;
+    /*height:180px;*/
+    background: #bc0a76;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color:white;
+    text-align: center;
+    padding-top:20px;
+    transition: all 1s ease;
+}
+
+.beyedj:hover{
+    background: blueviolet;
+    /*transform: translate(0, -120px);*/
+    bottom: 0;
+}
+
+.createdBy{
+    margin-top:20px;
+    margin-left: 10px;
+    text-align: left;
+
+}
+
+.Surname{
+    text-align: left;
+    margin-top:7px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media print  {
+    .beyedj{
+        background: white;
+        border:1px solid #dd00dd;
+        padding-top: 0;
+        bottom: 0;
+    }
+
+    .BuyList{
+        display: none;
+
+    }
+
+    .Surname{
+        margin-top: 0;
+    }
+}
+
