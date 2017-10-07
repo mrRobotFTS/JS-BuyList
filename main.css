@@ -44,6 +44,7 @@ body{
     padding-bottom: 10px;
     background: white;
     border-radius: 0.2em;
+
 }
 
 
@@ -137,6 +138,7 @@ body{
     content: attr(data-tooltip);
     position: absolute;
     background: #b53874;
+    /*background: #ff9679;*/
     top: -10px;
     width:60px;
     height: 0;
@@ -154,7 +156,7 @@ body{
     position: absolute;
     width:60px;
     height:10px;
-    opacity: 1;
+    opacity: 0.8;
     background: #b53874;
     font-size: 0.6em;
     padding:5px;
@@ -167,7 +169,18 @@ body{
 
 }
 
-
+.bl-minus-disabled{
+    position: relative;
+    border-radius: 10em;
+    color: white;
+    outline: 0;
+    border: 0; /* Параметры рамки */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота */
+    box-shadow:inset 0 -0.2em 1px rgba(34,36,38,.15);
+    border-radius: 30px;
+    background: #ffabb9;
+}
 
 
 .bl-minus {
@@ -214,7 +227,7 @@ body{
     position: absolute;
     width:60px;
     height:10px;
-    opacity: 1;
+    opacity: 0.8;
     background: #b53874;
     font-size: 0.6em;
     padding:5px;
@@ -332,6 +345,7 @@ body{
     border-top:1px solid rgba(34,36,38,.15);
     border-bottom:1px solid rgba(34,36,38,.15);
     display: block;
+    margin:10px;
 }
 
 .productWasBought{
@@ -341,11 +355,9 @@ body{
 
 .notBoughtProduct{
     background-color: lightgray;
-    margin-top:5px;
     /*margin-bottom:10px;*/
     margin-top:10px;
-    margin-right:4px;
-    margin-left:4px;
+    margin-left:0;
     border-radius: 0.3em;
     vertical-align: center;
     display: inline-block;
@@ -358,9 +370,7 @@ body{
     padding-left: 8px;
 }
 
-.notBoughtProduct:first-child{
-    margin-left: 10px;
-}
+
 
 .notBoughtProduct:last-child{
     margin-bottom: 10px;
@@ -389,6 +399,10 @@ body{
 
 .lastPanel{
     border-top:1px solid rgba(34,36,38,.15);
+}
+
+.productsMaket{
+    display:none;
 }
 
 .beyedj{
