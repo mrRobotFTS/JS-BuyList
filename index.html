@@ -14,7 +14,7 @@
             <div class="firstColumn">
 
                 <div class="bl-product">
-                    <input class="nameOfProduct"type="text" name="nameOfProduct" value="Назва товару">
+                    <input class="nameOfProduct" type="text" name="nameOfProduct" value="Назва товару">
                     <button class="addButton"><b>Додати</b></button>
                 </div>
 
@@ -28,15 +28,15 @@
             <div class="secondColumn">
                 <div class="bl-title" style="font-size: 1.1em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;"><b>Залишилося</b></div>
                 <div class="notBoughtProducts">
-                    <div class="notBoughtProduct">
-                        <span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Помідори</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">2</span>
-                    </div>
-                    <div class="notBoughtProduct">
-                        <span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Cир</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">1</span>
-                    </div>
-                    <div class="notBoughtProduct">
-                        <span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Огірки</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">3</span>
-                    </div>
+                    <!--<div class="notBoughtProduct">-->
+                        <!--<span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Помідори</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">2</span>-->
+                    <!--</div>-->
+                    <!--<div class="notBoughtProduct">-->
+                        <!--<span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Cир</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">1</span>-->
+                    <!--</div>-->
+                    <!--<div class="notBoughtProduct">-->
+                        <!--<span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Огірки</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">3</span>-->
+                    <!--</div>-->
                 </div>
                 <div class="bl-title" style="font-size: 1.1em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;"><b>Куплене</b></div>
                 <div class="lastPanel">
@@ -55,7 +55,8 @@
 <div class="productsMaket">
     <div class="product">
         <div class="nameProductColumn">
-            <div class="title">Помідори</div>
+            <span class="title">Помідори</span>
+            <input class="input-new-name"type="text" placeholder="Нова назва" >
         </div>
 
         <div class="plusMinusColumn">
@@ -66,8 +67,14 @@
 
         <div class="boughtColumn">
             <button class="boughtButton" style="vertical-align: middle; font-size: 0.8em"><i>Куплено</i></button>
+            <button class="boughtButton_state_2" style="vertical-align: middle; font-size: 0.8em"><i>Не куплено</i></button>
             <button class="deleteButton" style="vertical-align: middle; font-size: 1.1em"><b><i>&#215</i></b></button>
         </div>
+    </div>
+</div>
+<div class="productInSecondPanelMaket">
+    <div class="notBoughtProduct">
+        <span class="productWasBought"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">Огірки</span><span class="amountOfProductsLebel"style="font-size: 0.8em; font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;">3</span>
     </div>
 </div>
 <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>

@@ -241,7 +241,7 @@ body{
 }
 
 
-.boughtButton {
+.boughtButton, .boughtButton_state_2 {
     background: #e2e3e5;
     border-radius: 0.4em;
     color: #4a4a4a;
@@ -264,7 +264,18 @@ body{
     background-color: #b3b4b6;
 }
 
+.boughtButton_state_2{
+    display:none;
+}
 
+.boughtButton_state_2:hover{
+    background-color: #CACBCD;
+    color:black;
+
+}
+.boughtButton_state_2:active{
+    background-color: #b3b4b6;
+}
 
 .deleteButton {
     background: #DB2828;
@@ -291,6 +302,17 @@ body{
 .product{
     border-top:1px solid rgba(34,36,38,.15);
     display: flex;
+    /*color: #b4b4b4;*/
+}
+
+.title{
+    padding-right: 10px;
+    width:100%
+}
+
+.input-new-name{
+    display:none;
+    width:100%;
 }
 
 .nameProductColumn{
@@ -333,19 +355,14 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-
-}
-
-.bl-title:last-child{
     margin-top: 10px;
 }
-
 
 .notBoughtProducts{
     border-top:1px solid rgba(34,36,38,.15);
     border-bottom:1px solid rgba(34,36,38,.15);
     display: block;
-    margin:10px;
+    padding:10px;
 }
 
 .productWasBought{
@@ -356,8 +373,8 @@ body{
 .notBoughtProduct{
     background-color: lightgray;
     /*margin-bottom:10px;*/
-    margin-top:10px;
-    margin-left:0;
+    margin-top:5px;
+    margin-left:3px;
     border-radius: 0.3em;
     vertical-align: center;
     display: inline-block;
@@ -399,9 +416,10 @@ body{
 
 .lastPanel{
     border-top:1px solid rgba(34,36,38,.15);
+    padding:10px;
 }
 
-.productsMaket{
+.productsMaket, .productInSecondPanelMaket{
     display:none;
 }
 
